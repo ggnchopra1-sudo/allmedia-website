@@ -1,0 +1,12 @@
+# Always fetch fresh pages and scripts, so updates show straight away
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|js)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(jpg|jpeg|png|svg|webp)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+
+# Keep the repository's git data private
+RedirectMatch 404 /\.git
