@@ -249,7 +249,7 @@
   var story = [
     { title: 'FIND AN AGENCY', caption: 'Find an agency that gets it', lines: ['const agency = search({', '  style: "cinematic",', '  output: "every week"', '});', '> match found'] },
     { title: 'WATCH THE REEL', caption: 'Watch the reel, feel the pacing', lines: ['const reel = agency.work.play();', 'review(reel, {', '  hooks: true, pacing: "tight"', '});', '> this feels right'] },
-    { title: 'SEND THE FOOTAGE', caption: 'Send us your raw footage', lines: ['upload(raw, { to: "allmedia" });', 'brief.goals = ["reach",', '  "authority", "sales"];', 'brief.refs = client.links;', '> footage received'] },
+    { title: 'SHARE YOUR BRIEF', caption: 'Share your brief with us', lines: ['const brief = share({ to: "allmedia" });', 'brief.goals = ["brand",', '  "reach", "sales"];', 'brief.refs = client.links;', '> brief received'] },
     { title: 'GET THE FINAL CUT', caption: 'Get the final cut, ready to post', lines: ['const cut = edit(raw, {', '  hook: "3s", grade: true', '});', 'export(cut, ["9:16","16:9"]);', '> views climbing'] }
   ];
   var fills = $$('.sfill'), numEl = $('#storyNum'), capEl = $('#storyCaption');
